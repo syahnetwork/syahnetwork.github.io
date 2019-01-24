@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="" class="navbar-brand page-scroll">Darmansyah Nugraha</a>
+          <a href="#home" class="navbar-brand page-scroll">Darmansyah Nugraha</a>
         </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -46,9 +46,9 @@
 
     <!-- JUMBOTRON -->
     <div class="jumbotron text-center">
-      <img src="pic/adam.jpg" alt="Adam" style="border-radius: 20%">
-      <h1>Adam</h1>
-      <p>Lecturer | Web & Mobile Developer | Digital Marketer</p>
+      <img src="pic/adam.jpg" alt="Adam" style="border-radius: 20%;border: solid white">
+      <h1 style="color:white;">Adam</h1>
+      <p class="myjumbotron">Lecturer | Web & Mobile Developer | Digital Marketer</p>
     </div>
     <!-- END JUMBOTRON -->
 
@@ -146,12 +146,13 @@
                 <label for="tel">Contact Number</label>
                 <input type="tel" id="tel" class="form-control" placeholder="Contact Number" style="text-align: center">
               </div>
-              <select name="" id="" class="form-control" style="text-align: center;">
-                <option value="">Choose Category</option>
-                <option value="">Lecture</option>
+              <select name="" id="" class="form-control text-center" style="text-align: center;">
+                <optgroup label="Choose Category">
                 <option value="">Android and iOS</option>
-                <option value="">Web Development</option>
                 <option value="">Digital Marketing</option>
+                <option value="">Lecture</option>
+                <option value="">Web Development</option>
+                </optgroup>
               </select>
               <div class="form-group text-center">
                 <label for="pesan">Message</label>

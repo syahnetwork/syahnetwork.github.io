@@ -2,14 +2,30 @@ html {
     position        : relative;
 }
 
+.myjumbotron {
+	color: white;
+}
+
 body {
     margin-bottom   : 120px;
     margin-top: 30px;
 }
 
+.jumbotron {
+	background: url('../pic/header.jpg') no-repeat center fixed;
+	background-size: cover;
+	
+
+}
+
 .jumbotron img {
     width           : 150px;
     border          : 5px solid #888;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+/jumbotron h1, .jumbotron p {
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 hr {
