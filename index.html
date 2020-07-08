@@ -1,199 +1,468 @@
 <!DOCTYPE html>
-<html lang="en" id="home">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html>
+
+<head>
+    <title>Darmansyah Nugraha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Adam's Portfolio</title>
+    <!-- bootstrap 4.0.0-beta.2 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=2018.09.20">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107490980-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/adam.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#home" class="navbar-brand page-scroll">Darmansyah Nugraha</a>
+        gtag('config', 'UA-107490980-1');
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class='slider-navigation'>
+            <div class='nav-pointer draggable'>
+                0/0
+            </div>
         </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about" class="page-scroll">About</a></li>
-          <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-          <li><a href="#contact" class="page-scroll">Contact</a></li>
-        </ul>
-      </div>
-      </div>
-    </nav>
-    <!-- END NAVBAR -->
-
-
-
-    <!-- JUMBOTRON -->
-    <div class="jumbotron text-center">
-      <img src="pic/adam.jpg" alt="Adam" style="border-radius: 20%;border: solid white">
-      <h1 style="color:white;">Adam</h1>
-      <p class="myjumbotron">Lecturer | Web & Mobile Developer | Digital Marketer</p>
-    </div>
-    <!-- END JUMBOTRON -->
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">About</h2>
-            <hr>
-          </div>
+    </header>
+    <div class='site-container'>
+        <!-- select style button -->
+        <div class="btn-group" id="changestyle">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span id="selstyle">Style Space</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-val="default">Style Block</a></li>
+                <li><a class="dropdown-item" href="#" data-val="space">Style Space</a></li>
+                <li><a class="dropdown-item" href="#" data-val="snow">Style Snow</a></li>
+            </ul>
         </div>
+        <section class='intro'>
+            <div id='particles-js'></div>
+            <div class='wrap'>
+                <div class='content'>
+                    <div class="profile-card">
+                        <header>
+                            <!-- avatar -->
+                            <a><img src="img/hd.jpg" class="unselectable"></a>
+                            <!-- name -->
+                            <h1 class="unselectable">Darmansyah Nugraha</h1>
+                            <!-- role -->
+                            <h2 class="unselectable">Full Stack Developer</h2>
+                        </header>
+                        <div class="profile-bio">
+                            <p class="unselectable">
+                                Passionate about technology
+                                <br>Technology Enthusiast
+                            </p>
+                        </div>
+                        <!-- social links -->
+                        <ul class="profile-social-links">
+                            <li><a target="_blank" href="https://www.linkedin.com/in/adamnkri/">
+                                    <i class="fa fa-lg fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li><a target="_blank" href="https://stackoverflow.com/users/11043188/adam-network">
+                                    <i class="fa fa-lg fa-stack-overflow"></i>
+                                </a>
+                            </li>
+                            <li><a target="_blank" href="https://github.com/syahnetwork">
+                                    <i class="fa fa-lg fa-github-alt"></i>
+                                </a>
+                            </li>
+                            <li><a target="_blank" href="https://www.facebook.com/TheJohnSmith.Sr">
+                                    <i class="fa fa-lg fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/Ottawa_1920x1080.jpg"></div>
+        <section>
+            <div class="about-me">
+                <div class="text-center">
+                    <img class="unselectable" src="img/about-me.png" height="100" width="550">
+                    <br><br>
+                </div>
+                <div class="clearfix"></div>
+                <div class="about-me__content" id="terminal-start">
+                    <p>Last login: Mon Jul 06 00:28:38 2020 from
+                        cpe44d9e79bd14b-cma84e3fd1a7d0.cpe.net.cable.rogers.com</p>
+                    <pre style="border: none;">
+         __|  __|_  )
+         _|  (     /   Amazon Linux AMI
+        ___|\___|___|
 
-        <div class="row">
-          <div class="col-sm-5 col-sm-offset-1">
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis earum possimus fugiat asperiores laboriosam adipisci omnis quaerat, tempora magni, iure, voluptate. Hic asperiores fuga tempore fugit maxime quis commodi. Possimus.</p>
-          </div>
-          <div class="col-sm-5">
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis earum possimus fugiat asperiores laboriosam adipisci omnis quaerat, tempora magni, iure, voluptate. Hic asperiores fuga tempore fugit maxime quis commodi. Possimus.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END ABOUT -->
-    
-    <!-- PORTFOLIO -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center" >
-            <h2>Portfolio</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-          <a href="" class="thumbnail">
-            <img src="pic/1.jpg" alt="1">
-          </a>
-          </div>
-          <div class="col-sm-4">
-          <a href="" class="thumbnail">
-            <img src="pic/2.jpg" alt="2">
-          </a>
-          </div>
-          <div class="col-sm-4">
-          <a href="" class="thumbnail">
-            <img src="pic/3.jpg" alt="3">
-          </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-          <a href="" class="thumbnail">
-            <img src="pic/4.jpg" alt="4">
-          </a>
-          </div>
-          <div class="col-sm-4">
-          <a href="" class="thumbnail">
-            <img src="pic/5.jpg" alt="5">
-          </a>
-          </div>
-          <div class="col-sm-4">
-          <a href="" class="thumbnail">
-            <img src="pic/6.jpg" alt="6">
-          </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END PORTFOLIO -->
+Amazon Linux version 2020.07 is available.
+</pre>
+                    <br><br>
+                    <div class="command">
+                        <!-- email -->
+                        <p>echo $email</p>
+                        <span class="hideme">email: syahnetwork@gmail.com</span>
+                        <!-- phone -->
+                        <p>echo $phone</p>
+                        <span class="hideme">phone: (62)-8966962-XXXX</span>
+                        <!-- address -->
+                        <p>echo $address</p>
+                        <span class="hideme">address: Yogyakarta, DIY, Indonesia</span>
+                        <!-- education -->
+                        <p>echo $education</p>
+                        <span class="hideme">Yogyakarta<br>
+                            BSc: Specialization in Computer Science</span>
+                        <!-- eligible_to_work -->
+                        <p>echo $eligible_to_work</p>
+                        <span class="hideme">Permanent Resident of Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="parallax-window-half" data-parallax="scroll" data-image-src="img/test-oct.png"></div>
+        <section class="flx-center">
+            <div class="text-center">
 
+                <!-- Block 5 (SHA-256 blockchain) -->
+                <div class="one-block latest-block">
+                    <p class="h4 text-center">Block #: 005</p>
+                    <p><label>Data:</label></p>
+                    <div class="block-data">
+                        <p>
+                            <label>Title:</label><b>Software Developer</b></p>
+                        <p>
+                            <label>Company:</label>Lumut</p>
+                        <p>
+                            <label>Stack:</label>MySQL, Ruby on Rails, React</p>
+                        <p>
+                            <label>Time:</label>Jan 2019 - Present</p>
+                    </div>
+                    <div>
+                        <br>
+                        <p class="truncate">
+                            <small><label>Hash: </label>9d169ad4b0875680b2256b5f8cfe9c02b977fe5cc2f1659ffdf63fc9955f4b45</small>
+                            <br>
+                            <small><label>Previous Hash: </label>964c3a9c26762dce89d124381b91f0469fb549915077377ba943b60a78e2eb54</small>
+                        </p>
+                    </div>
+                </div>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2>Contact</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <form action="">
-              <div class="form-group text-center">
-                <label for="name">Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Full Name" style="text-align: center">
-              </div>
-              <div class="form-group text-center">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Email" style="text-align: center">
-              </div>
-              <div class="form-group text-center">
-                <label for="tel">Contact Number</label>
-                <input type="tel" id="tel" class="form-control" placeholder="Contact Number" style="text-align: center">
-              </div>
-              <select name="" id="" class="form-control text-center" style="text-align: center;">
-                <optgroup label="Choose Category">
-                <option value="">Android and iOS</option>
-                <option value="">Digital Marketing</option>
-                <option value="">Lecture</option>
-                <option value="">Web Development</option>
-                </optgroup>
-              </select>
-              <div class="form-group text-center">
-                <label for="pesan">Message</label>
-                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Input Message"></textarea>
-              </div>
-              <div class="col-sm-6 col-sm-offset-3 text-center">
-              <button type="submit" class="btn btn-success">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END CONTACT -->
+                <!-- Block 4 (SHA-256 blockchain) -->
+                <div class="one-block">
+                    <p class="h4 text-center">Block #: 004</p>
+                    <p><label>Data:</label></p>
+                    <div class="block-data">
+                        <p>
+                            <label>Title:</label><b>Full Stack Developer</b></p>
+                        <p>
+                            <label>Company:</label>Mega Giga Solusindo</p>
+                        <p>
+                            <label>Stack:</label>MySQL, Python, Vue2, NodeJS, AWS, Salesforce</p>
+                        <p>
+                            <label>Time:</label>Feb 2017 - May 2019</p>
+                    </div>
+                    <div>
+                        <br>
+                        <p class="truncate">
+                            <small><label>Hash: </label>964c3a9c26762dce89d124381b91f0469fb549915077377ba943b60a78e2eb54</small>
+                            <br>
+                            <small><label>Previous Hash: </label>c9e0d20f8660f77636c18bed30d0331ccee6724e03ccbc37d7d73fdc13326a51</small>
+                        </p>
+                    </div>
+                </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-12">
-            <p>&copy; 2019 | developed by <a href="http://instagram.com/tokoutara">Adam</a>.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <p><i class="glyphicon glyphicon-chevron-left" style="color: orange;"></i><i class="glyphicon glyphicon-chevron-right" style="color: orange;"></i> With <i class="glyphicon glyphicon-heart" style="color: red"></i></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- END FOOTER -->
+                <!-- Block 3 (SHA-256 blockchain) -->
+                <div class="one-block">
+                    <p class="h4 text-center">Block #: 003</p>
+                    <p><label>Data:</label></p>
+                    <div class="block-data">
+                        <p>
+                            <label>Title:</label><b>Software Application Developer</b></p>
+                        <p>
+                            <label>Company:</label>Wahana Jaya Komunika</p>
+                        <p>
+                            <label>Stack:</label>PostgresSQL, Node.js, JS, HTML5, CSS3</p>
+                        <p>
+                            <label>Time:</label>Mar 2016 - Feb 2017</p>
+                    </div>
+                    <div>
+                        <br>
+                        <p class="truncate">
+                            <small><label>Hash: </label>c9e0d20f8660f77636c18bed30d0331ccee6724e03ccbc37d7d73fdc13326a51</small>
+                            <br>
+                            <small><label>Previous Hash: </label>b2d7beff5177094f4a4aceb7c9bf1cc6434cd5a2b8d68cc0a572ac2e963cb2a2</small>
+                        </p>
+                    </div>
+                </div>
 
+                <br>
+                <!-- Block 2 (SHA-256 blockchain) -->
+                <div class="one-block hide-mobile">
+                    <p class="h4 text-center">Block #: 002</p>
+                    <p><label>Data:</label></p>
+                    <div class="block-data">
+                        <p>
+                            <label>Title:</label><b>Front End Developer</b></p>
+                        <p>
+                            <label>Company:</label>Freelancer.com</p>
+                        <p>
+                            <label>Stack:</label>Vue.js, CoffeeScript, JS, HTML5, CSS3</p>
+                        <p>
+                            <label>Time:</label>June 2016 - Nov 2016</p>
+                    </div>
+                    <div>
+                        <br>
+                        <p class="truncate">
+                            <small><label>Hash: </label>b2d7beff5177094f4a4aceb7c9bf1cc6434cd5a2b8d68cc0a572ac2e963cb2a2</small>
+                            <br>
+                            <small><label>Previous Hash: </label>29aa94f65fa959c35fb44427d09018b95117be94b0d7eeb921e79c3cda20d174</small>
+                        </p>
+                    </div>
+                </div>
 
+                <!-- Block 1 (SHA-256 blockchain) -->
+                <div class="one-block hide-mobile">
+                    <p class="h4 text-center">Block #: 001</p>
+                    <p><label>Data:</label></p>
+                    <div class="block-data">
+                        <p>
+                            <label>Title:</label><b>Web Developer</b></p>
+                        <p>
+                            <label>Company:</label>Upwork.com</p>
+                        <p>
+                            <label>Stack:</label>LAMP, PHP5, JS, HTML5, CSS3</p>
+                        <p>
+                            <label>Time:</label>Mar 2015 - Feb 2016</p>
+                    </div>
+                    <div>
+                        <br>
+                        <p class="truncate">
+                            <small><label>Hash: </label>29aa94f65fa959c35fb44427d09018b95117be94b0d7eeb921e79c3cda20d174</small>
+                            <br>
+                            <small><label>&nbsp;</label>"Genesis Block"</small>
+                        </p>
+                    </div>
+                </div>
 
+                <div class="text-center h5">SHA-256 blockchain</div>
+            </div>
+        </section>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/test-oct-6.png"></div>
+        <!-- =================== script =================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="lib/parallax.js-1.4.2/parallax.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
 
+        <!-- particles js -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+        <!-- bootstrap 4.0.0-beta.2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/adam.js"></script> 
-  </body>
+        <!-- main js file -->
+        <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                // random style on page load
+                let display_text = ''
+                switch (Math.round(Math.random() * 2 + 1)) {
+                    case 1:
+                        styleDefault();
+                        display_text = 'Style Block'
+                        break;
+                    case 2:
+                        styleSpace();
+                        display_text = 'Style Space'
+                        break;
+                    case 3:
+                        styleSnow();
+                        display_text = 'Style Snow'
+                        break;
+                    default:
+                        styleSpace();
+                        display_text = 'Style Block'
+                }
+                $('#selstyle').text(display_text);
+
+                $('#changestyle .dropdown-menu a').click(function () {
+                    var style = $(this).data('val');
+                    switch (style) {
+                        case 'default':
+                            styleDefault();
+                            break;
+                        case 'space':
+                            styleSpace();
+                            break;
+                        case 'snow':
+                            styleSnow();
+                            break;
+                        default:
+                            styleSpace();
+                    }
+                    $('#selstyle').text($(this).text());
+                });
+
+                /*-------------------------------
+                    terminal linux style
+                -------------------------------*/
+                var about_me_content_displayed = false;
+                var $lines = $('.command p');
+                $lines.hide();
+
+                var lineContents = [];
+                var output = [];
+
+                var terminal = function () {
+                    var skip = 0;
+                    typeLine = function (idx) {
+                        idx == null && (idx = 0);
+                        var element = $lines.eq(idx);
+                        var content = lineContents[idx];
+                        if (typeof content == "undefined") {
+                            $('.skip').hide();
+                            return;
+                        }
+                        var charIdx = 0;
+                        var typeChar = function () {
+                            var rand = Math.round(Math.random() * 150) + 20;
+
+                            setTimeout(function () {
+                                var char = content[charIdx++];
+                                element.append(char);
+                                if (typeof char !== "undefined")
+                                    typeChar();
+                                else {
+                                    element.append('<br/><span class="output">' + output[idx] + '</span>');
+                                    element.removeClass('active');
+                                    typeLine(++idx);
+                                }
+                            }, skip ? 0 : rand);
+                        }
+                        element.append('[ec2-user@ip-127-0-0-1 ~]$ ').addClass('active');
+                        typeChar();
+                    }
+
+                    $lines.each(function (i) {
+                        lineContents[i] = $(this).text();
+                        output[i] = $(this).next('span').html();
+                        $(this).text('').show();
+                    });
+                    typeLine();
+                }
+
+                $(window).scroll(function () {
+                    var hT = $('#terminal-start').offset().top,
+                        hH = $('#terminal-start').outerHeight(),
+                        wH = $(window).height(),
+                        wS = $(this).scrollTop() - 250;
+                    if (wS > (hT + hH - wH) && !about_me_content_displayed) {
+                        about_me_content_displayed = true;
+                        terminal();
+                    }
+                });// end terminal style -------
+
+                $('section').each(function () {
+                    $('.slider-navigation').prepend('<div class="tick"></div>');
+                });
+
+                $('.tick').on('click', function () {
+                    var tickIndex = $(this).index();
+                    $('body').scrollTop($(window).height() * tickIndex);
+                });
+
+                updatePos();
+            }); // end document ready -------
+
+            var isDragging = false;
+            var sliderTop, pointerPos, currentSection;
+
+            var bodyHeight = $('body').height();
+            var sliderHeight = $('.slider-navigation').height();
+            var elementHeight = $('section').height();
+            var sectionAmount = $('section').length;
+            var scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
+
+            var waitForFinalEvent = (function () {
+                var timers = {};
+                return function (callback, ms, uniqueId) {
+                    if (!uniqueId) {
+                        uniqueId = "resize";
+                    }
+                    if (timers[uniqueId]) {
+                        clearTimeout(timers[uniqueId]);
+                    }
+                    timers[uniqueId] = setTimeout(callback, ms);
+                };
+            })();
+
+            function updatePos() {
+                currentSection = $(window).scrollTop() / elementHeight;
+                currentSectionNum = Math.ceil(currentSection + 0.01);
+                sliderTop = $(window).scrollTop() / scale;
+                $('.nav-pointer').css('top', sliderTop).text(currentSectionNum + '/' + sectionAmount);
+            }
+
+            function sliderMove(e) {
+                $('body').scrollTop(parseInt(e) * scale);
+            }
+
+            $(window).scroll(function () {
+                if (!isDragging) {
+                    updatePos();
+                }
+            });
+
+            $(window).resize(function () {
+                waitForFinalEvent(function () {
+                    bodyHeight = $('body').height();
+                    sliderHeight = $('.slider-navigation').height();
+                    elementHeight = $('section').height();
+                    sectionAmount = $('section').length;
+                    scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
+
+                    updatePos();
+                }, 500, "resizing");
+            });
+
+            // $(".draggable").draggable({
+            //  axis: "y",
+            //  containment: "parent",
+            //  start: function() {
+            //      isDragging = true;
+            //      $('body').addClass('dragging');
+            //  },
+            //  drag: function() {
+            //      pointerPos = $(this).css('top');
+            //      sliderMove(pointerPos);
+            //      updatePos();
+            //  },
+            //  stop: function() {
+            //      isDragging = false;
+            //      $('body').removeClass('dragging');
+            //  }
+            // });
+
+            // Steve Jobs Quotes
+            console.log("\n \t Your work is going to fill a large part of your life,\n and the only way to be " +
+                "truly satisfied is to do what you \n believe is great work. And the only way to do great" +
+                " work \n is to love what you do. If you haven't found it yet, keep \n looking. Don't settle." +
+                " As with all matters of the heart, \n you'll know when you find it.\n\n\n \t\t\t\t\t\t\t\t\t\t\t " +
+                "Steve Jobs \n\n");
+
+        </script>
+</body>
 </html>
